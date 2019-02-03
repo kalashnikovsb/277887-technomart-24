@@ -24,8 +24,8 @@
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
         </address>
         <div class="user-block unauthorized">
-          <a class="user-login" href="login.html">Войти</a>
-          <a class="user-registration" href="registration.html">Регистрация</a>
+          <a class="user-login" href="user-login.html">Войти</a>
+          <a class="user-registration" href="user-registration.html">Регистрация</a>
         </div>
       </div>
         
@@ -60,7 +60,7 @@
           <h2 class="contacts-title">Контакты</h2>
           <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <a class="map-link" href="map.html">
-            <img class="map-image" src="img/map-image.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
+            <img class="map-small" src="img/map-small.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
           </a>
           <a class="button red-button" href="contacts.html">Заблудились? Напишите нам!</a>
         </section>
@@ -111,5 +111,26 @@
         </div>
       </div>
     </footer>
+    
+    <div class="write-us-popup">
+      <form class="writeus-form" action="http://echo.htmlacademy.ru" method="get">
+        <div class="writeus-close"></div>
+        
+        <label class="input-label" for="name">Ваше имя:</label>
+        <input class="input-text" type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+        
+        <label class="input-label" for="email">Ваш e-mail:</label>
+        <input class="input-text" type="email" id="email" name="email" placeholder="email@example.com" required>
+        
+        <label class="textarea-label" for="text">Текст письма:</label>
+        <textarea class="textarea-text" id="text" name="text" required>В свободной форме</textarea>
+        <button class="writeus-submit" type="submit">Отправить</button>
+      </form>
+      
+      <div class="map-popup">
+        <div class="map-close"></div>
+        <img class="map-big" src="img/map-big.jpg" alt="Карта с маркером на ул. Б. Конюшенная, д.19/8" width="940" height="446">
+      </div>
+    </div>
   </body>
 </html>

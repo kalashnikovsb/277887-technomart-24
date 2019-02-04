@@ -10,7 +10,9 @@
       <div class="header-top">
         <div class="container">
           <a class="header-logo">Техномарт</a>
-          <input class="search" type="text" name="search" placeholder="Поиск:">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="search" type="text" name="search" placeholder="Поиск:">
+          </form>
           <a class="bookmarks" href="bookmarks.html">Закладки</a>
           <a class="cart" href="cart.html">Корзина</a>
           <a class="checkout" href="checkout.html">Оформить заказ</a>
@@ -69,7 +71,7 @@
     
     <footer class="main-footer">
       <div class="footer-top">
-        <a class="footer-logo">Техномарт</a>
+        <a class="footer-logo" href="index.html">Техномарт</a>
         <ul class="footer-nav-list">
           <li class="footer-nav-item"><a href="company.html">Компания</a></li>
           <li class="footer-nav-item"><a href="news.html">Новости</a></li>
@@ -105,7 +107,7 @@
             </p>
             <p class="developer-contacts">
               <span>Разработано -</span>
-              <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </section>
         </div>
@@ -113,23 +115,26 @@
     </footer>
     
     <div class="writeus-popup">
-      <button class="popup-close">Закрыть</button>
+      <button class="popup-close" type="button">Закрыть</button>
       <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
         
-        <label class="input-label" for="name">Ваше имя:</label>
-        <input class="input-text" type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+        <label class="input-label" for="customer-name">Ваше имя:</label>
+        <input class="input-content" type="text" id="customer-name" name="name" placeholder="Имя Фамилия" required>
         
-        <label class="input-label" for="email">Ваш e-mail:</label>
-        <input class="input-text" type="email" id="email" name="email" placeholder="email@example.com" required>
+        <label class="input-label" for="customer-email">Ваш e-mail:</label>
+        <input class="input-content" type="email" id="customer-email" name="email" placeholder="email@example.com" required>
         
-        <label class="textarea-label" for="text">Текст письма:</label>
-        <textarea class="textarea-text" id="text" name="text" required>В свободной форме</textarea>
-        <button class="writeus-submit" type="submit">Отправить</button>
+        <label class="textarea-label" for="customer-message">Текст письма:</label>
+        <textarea class="textarea-content" id="customer-message" name="text" required>В свободной форме</textarea>
+        
+        <div class="writeus-bottom">
+          <button class="writeus-submit" type="submit">Отправить</button>
+        </div>
       </form>
     </div>
     
     <div class="map-popup">
-      <div class="map-close"></div>
+      <div class="map-close" type="button">Закрыть</div>
       <img class="map-big" src="img/map-big.jpg" alt="Карта с адресом ул. Б. Конюшенная, д.19/8" width="940" height="446">
     </div>
   </body>

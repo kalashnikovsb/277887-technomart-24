@@ -10,7 +10,9 @@
       <div class="header-top">
         <div class="container">
           <a class="header-logo" href="index.html">Техномарт</a>
-          <input class="search" type="text" name="search" placeholder="Поиск:">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="search" type="text" name="search" placeholder="Поиск:">
+          </form>
           <a class="bookmarks" href="bookmarks.html">Закладки</a>
           <a class="cart" href="cart.html">Корзина</a>
           <a class="checkout" href="checkout.html">Оформить заказ</a>
@@ -24,7 +26,11 @@
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
         </address>
         <div class="user-block authorized">
-          <a class="user-name" href="user-account.html">Равшан Джамшутович</a>
+          <div>
+            <a class="user-icon user-account" href="user-account.html"></a>
+            <a class="user-name" href="user-account.html">Равшан Джамшутович</a>
+            <a class="user-icon user-logout" href=""></a>
+          </div>
           <a class="user-link" href="user-orders.html">Мои заказы</a>
           <a class="user-link" href="user-account.html">Личный кабинет</a>
         </div>
@@ -45,9 +51,10 @@
     
     <main class="main-content">
       <ul class="breadcrumbs">
+        <li class="breadcrumbs-index"><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="instruments.html">Инструмент</a></li>
-        <li><a>Перфораторы</a></li>
+        <li class="breadcrumbs-active"><a>Перфораторы</a></li>
       </ul>
         
       <h1 class="page-title">Перфораторы</h1>
@@ -57,24 +64,42 @@
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="manufacturers-filter">
               <legend class="manufacturers-title">Производители:</legend>
-              <input type="checkbox" name="bosch" value="yes" id="bosch">
-              <label for="bosch">Bosch</label>
-              <input type="checkbox" name="interskol" value="yes" id="interskol">
-              <label for="interskol">Интерскол</label>
-              <input type="checkbox" name="makita" value="yes" id="makita">
-              <label for="makita">Makita</label>
-              <input type="checkbox" name="dewalt" value="yes" id="dewalt">
-              <label for="dewalt">Dewalt</label>
-              <input type="checkbox" name="hitachi" value="yes" id="hitachi">
-              <label for="hitachi">Hitachi</label>
+              <ul>
+                <li>
+                  <input type="checkbox" name="bosch" value="yes" id="bosch">
+                  <label for="bosch">Bosch</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="interskol" value="yes" id="interskol">
+                  <label for="interskol">Интерскол</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="makita" value="yes" id="makita">
+                  <label for="makita">Makita</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="dewalt" value="yes" id="dewalt">
+                  <label for="dewalt">Dewalt</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="hitachi" value="yes" id="hitachi">
+                  <label for="hitachi">Hitachi</label>
+                </li>
+              </ul>
             </fieldset>
               
             <fieldset class="power-filter">
               <legend class="manufacturers-title">Питание:</legend>
-              <input type="radio" name="power-type" value="battery-power" id="battery-power">
-              <label for="battery-power">Аккумуляторные</label>
-              <input type="radio" name="power-type" value="mains-power" id="mains-power">
-              <label for="mains-power">Сетевые</label>
+              <ul>
+                <li>
+                  <input type="radio" name="power-type" value="battery-power" id="battery-power">
+                  <label for="battery-power">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input type="radio" name="power-type" value="mains-power" id="mains-power">
+                  <label for="mains-power">Сетевые</label>
+                </li>
+              </ul>
             </fieldset>
             <button class="submit-button" type="submit">Показать</button>
           </form>
@@ -186,7 +211,7 @@
     
     <footer class="main-footer">
       <div class="footer-top">
-        <a class="footer-logo">Техномарт</a>
+        <a class="footer-logo" href="index.html">Техномарт</a>
         <ul class="footer-nav-list">
           <li class="footer-nav-item"><a href="company.html">Компания</a></li>
           <li class="footer-nav-item"><a href="news.html">Новости</a></li>
@@ -222,18 +247,20 @@
             </p>
             <p class="developer-contacts">
               <span>Разработано -</span>
-              <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </section>
         </div>
       </div>
     </footer>
     
-    <div class="added-to-cart-popup">
-      <button class="popup-close">Закрыть</button>
-      <p class="added-to-cart-text">Товар добавлен в корзину!</p>
-      <a class="button red-button" href="checkout.html">Оформить заказ</a>
-      <button class="button white-button">Продолжить покупки</button>
+    <div class="add-cart-popup">
+      <button class="popup-close" type="button">Закрыть</button>
+      <p class="add-cart-text">Товар добавлен в корзину!</p>
+      <div class="add-cart-bottom">
+        <a class="button red-button" href="checkout.html">Оформить заказ</a>
+        <button class="button white-button">Продолжить покупки</button>
+      </div>
     </div>
   </body>
 </html>

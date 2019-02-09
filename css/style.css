@@ -21,13 +21,13 @@ body {
   text-transform: uppercase;
   display: inline-block;
   vertical-align: middle;
-  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .red-button {
   color: #ffffff;
   background: #ee3643;
-  line-height: 38px;
 }
 
 .red-button:hover {
@@ -41,7 +41,6 @@ body {
 .transparent-button {
   color: #ffffff;
   background: rgba(255,255,255,0.1);
-  line-height: 38px;
 }
 
 .transparent-button:hover {
@@ -119,8 +118,8 @@ body {
 .checkout {
   background: #63a63e;
   width: 150px;
-  height: 42px;
-  line-height: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -166,7 +165,8 @@ body {
   color: #000000;
   text-decoration: none;
   background: #ffffff;
-  height: 45px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .user-login:hover, .user-registration:hover, .user-name:hover {
@@ -179,28 +179,22 @@ body {
 
 .user-login {
   width: 121px;
-  height: 45px;
-  line-height: 45px;
-  display: inline-block;
-  vertical-align: middle;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-align: center;
 }
 
 .user-registration {
   width: 150px;
-  height: 45px;
-  line-height: 45px;
-  display: inline-block;
-  vertical-align: middle;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-align: center;
 }
 
 .user-name {
   width: 300px;
-  height: 45px;
-  line-height: 45px;
-  display: inline-block;
-  vertical-align: middle;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-align: center;
 }
 
@@ -302,7 +296,6 @@ body {
 
 .aboutus .button {
   width: 220px;
-  height: 38px;
   text-align: center;
 }
 
@@ -476,20 +469,21 @@ body {
 .submit-button {
   font-size: 13px;
   line-height: 18px;
-  width: 138px;
-  height: 36px;
+  width: 140px;
+  height: 38px;
   background: #ffffff;
-  border: 1px solid #e5e5e5;
+  box-shadow: inset 0px 0px 0px 1px rgba(229,229,229,1);
+  border: none;
   outline: none;
   text-transform: uppercase;
 }
 
 .submit-button:hover {
-  border: 1px solid #bdc6ca;
+  box-shadow: inset 0px 0px 0px 1px rgba(189,198,202,1);
 }
 
 .submit-button:active {
-  border: 1px solid #ee3643;
+  box-shadow: inset 0px 0px 0px 1px rgba(238,55,68,1);
 }
 
 
@@ -531,14 +525,15 @@ body {
 .product-buttons {
   font-family: "Cuprum", "Helvetica", sans-serif;
   text-transform: uppercase;
+  line-height: 18px;
 }
 
 .buy-button {
   color: #ffffff;
   background: #63a63e;
   width: 135px;
-  height: 38px;
-  line-height: 38px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: inline-block;
   vertical-align: middle;
   text-align: center;

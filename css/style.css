@@ -368,22 +368,22 @@ body {
   font-style: normal;
 }
 
-.popular-categories {
+.popular-links {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.popular-categories a {
+.popular-links a {
   color: #ffd180;
   text-decoration: none;
 }
 
-.popular-categories a:hover {
+.popular-links a:hover {
   text-decoration: underline;
 }
 
-.popular-categories a:active {
+.popular-links a:active {
   color: rgba(255,209,128,0.5);
   text-decoration: none;
 }

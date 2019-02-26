@@ -1705,15 +1705,10 @@ input[id="credit"]:checked ~ .slider-controls .control-item[for="credit"] {
   margin-bottom: 0;
 }
 
-.manufacturers-filter input {
-  display: none;
-}
-
 .manufacturers-filter label {
   padding-left: 34px;
   position: relative;
   display: block;
-  +background: yellow;
   position: relative;
 }
 
@@ -1803,10 +1798,6 @@ input[id="credit"]:checked ~ .slider-controls .control-item[for="credit"] {
 
 .power-filter li:last-of-type {
   margin-bottom: 0;
-}
-
-.power-filter input {
-  display: none;
 }
 
 .power-filter label {

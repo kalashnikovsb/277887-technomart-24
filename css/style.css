@@ -2338,7 +2338,7 @@ input[id='credit']:checked~.slider-controls .control-item[for='credit'] {
 
 .writeus-popup {
   position: fixed;
-  z-index: 30 ;
+  z-index: 30;
   bottom: 213px;
   left: 50%;
   width: 620px;

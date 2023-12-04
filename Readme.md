@@ -1,6 +1,5 @@
 # Личный проект «Техномарт»
 
-https://kalashnikovsb.github.io/277887-technomart-24/
 * Студент: [Алексей Калашников](https://up.htmlacademy.ru/htmlcss/24/user/277887).
 * Наставник: [Женя Михайлова](https://htmlacademy.ru/profile/id56156).
 
